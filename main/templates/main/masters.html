@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block title %}
+    <title>Мастера</title>
+{% endblock %}
+
+{% block stylefooter %}
+    <link rel="stylesheet" href="{% static "styles/form_inpdata_style.css" %}">
+    <link rel="stylesheet" href="{% static "styles/orders_list.css" %}">
+{% endblock %}
+
+{% block main_content %}
+{% if user.is_authenticated %}
+    <div class="main_content">
+                    <div class="panel_categ">
+                        <h3>Вкладки</h3>
+                        <div class="column_panel">
+                            <a class="but_res" href="{% url "main:index" %}"><img name="" src="" /><span>Заявки</span></a>
+                            <a class="but_res" href="{% url "main:clients" %}"><img name="" src="" /><span>Клиенты</span></a>
+                            <a class="but_res selected" href="{% url "main:masters" %}"><img name="" src="" /><span>Мастера</span></a>
+                            <a class="but_res" href="{% url "main:types" %}"><img name="" src="" /><span>Типы</span></a>
+                            <a class="but_res" href="{% url "main:statuses" %}"><img name="" src="" /><span>Статусы</span></a>
+                        </div>
+                    </div>
+                    
+                    <div class="ker_pg orders_form active_form">
+                        <div class="title_pg"><h1>Мастера</h1></div>
+
+                        <div class="panel_work">
+                            <div class="tools_part">
+                                <a class="tool_but left_part_panel" href="{% url "main:masters_add" %}">➕&nbsp;Добавить</a>
+                                <a class="tool_but left_part_panel" href="{% url "main:masters" %}">👁&nbsp;Посмотреть</a>
+                            </div>
+                        </div>
+
+                        <p></p>
+
+                        <table class="list_orders">
+                            <thead>
+                                <tr>
+                                    <th>Номер</th>
+                                    <th class="chet_col">ФИО</th>
+                                    <th>Телефон</th>
+                                    <th class="chet_col">Почта</th>
+                                    <th>Адрес</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            {% for item in full_ord %}
+                            {% if not item.is_complate %}
+                                <tr class="cicle">
+                                    <th>{{ item.id }}</th>
+                                    <th>{{ item.name }}</th>
+                                    <th>{{ item.phone }}</th>
+                                    <th>{{ item.email }}</th>
+                                    <th>{{ item.address }}</th>
+                                    <th><a class="del_butt line_butt" href="{% url "main:master_del" item.id %}">Удалить</a></th>
+                                </tr>
+                            {% endif %}
+                            {% empty %}
+                                    <tr class="cicle">
+                                        <th>Нет мастеров</th>
+                                    </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+
+                    </div>
+    </div>
+{% else %}
+    <p class="els_unck">Вы не вошли в систему.</p>
+{% endif %}
+{% endblock %}

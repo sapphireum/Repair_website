@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block title %}
+    <title>Заявки</title>
+{% endblock %}
+
+{% block stylefooter %}
+    <link rel="stylesheet" href="{% static "styles/form_inpdata_style.css" %}">
+    <link rel="stylesheet" href="{% static "styles/orders_list.css" %}">
+{% endblock %}
+
+{% block main_content %}
+{% if user.is_authenticated %}
+    <div class="main_content">
+                    <div class="panel_categ">
+                        <h3>Вкладки</h3>
+                        <div class="column_panel">
+                            <a class="but_res selected" href="{% url "main:index" %}"><img name="" src="" /><span>Заявки</span></a>
+                            <a class="but_res" href="{% url "main:clients" %}"><img name="" src="" /><span>Клиенты</span></a>
+                            <a class="but_res" href="{% url "main:masters" %}"><img name="" src="" /><span>Мастера</span></a>
+                            <a class="but_res" href="{% url "main:types" %}"><img name="" src="" /><span>Типы</span></a>
+                            <a class="but_res" href="{% url "main:statuses" %}"><img name="" src="" /><span>Статусы</span></a>
+                        </div>
+                    </div>
+                    
+                    <div class="ker_pg orders_form active_form">
+                        <div class="title_pg"><h1>Заявки</h1></div>
+
+                        <div class="message_cont">
+                            <div class="message_box">
+                                {% for message in messages %}
+                                    <p class="message_info">{{ message }}</p>
+                                {% endfor %}
+                            </div>
+                        </div>
+
+                        <div class="filter_panel">
+                            <form class="filtr_form" method="get" action="{% url "main:order_search" %}">
+                                <input name="q" type="text" class="filter_area" value="{{ query }}" placeholder="Поиск по описанию..." required>
+                                <button class="filter_area" type="submit">Искать</button>
+                            </form>
+                        </div>
+
+                        <div class="panel_work">
+                            <div id="json_panel" class="imp_json" style="display: none;">
+                                <form class="json_form" method="post" action="{% url "main:ordimpr" %}" enctype="multipart/form-data"> 
+                                    {% csrf_token %}
+                                    <div class="cross">
+                                        <button class="butt_cross" onclick="toggleChat()">×</button>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Выберите JSON файл:</label>
+                                        <p></p>
+                                    </div>
+                                    <input type="file" name="json_file" accept=".json" required>
+                                    <button type="submit">Импортировать</button>
+                                </form>
+                            </div>
+
+                            <div class="tools_part">
+                                <a class="tool_but left_part_panel" href="{% url "main:orders_add" %}">➕&nbsp;Добавить</a>
+                                <a class="tool_but left_part_panel" href="{% url "main:orders" %}">👁&nbsp;Посмотреть</a>
+                            </div>
+                            <button class="tool_but right_part_panel" onclick="toggleChat()">JSON+</button>
+                        </div>
+
+                        <table class="list_orders">
+                            <thead>
+                                <tr>
+                                    <th>Номер</th>
+                                    <th class="chet_col">Тип проблемы</th>
+                                    <th>Клиент</th>
+                                    <th class="chet_col">Мастер</th>
+                                    <th>Статус</th>
+                                    <th class="chet_col">Цена ₽</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            {% for item in full_ord %}
+                            {% if not item.is_deleted %}
+                                <tr class="cicle">
+                                    <th>{{ item.extid }}</th>
+                                    <th>{{ item.type_issue.name }}</th>
+                                    <th>{{ item.client.name }}</th>
+                                    <th>{{ item.master.name }}</th>
+                                    <th>{{ item.status_order.name }}</th>
+                                    <th>{{ item.price }}</th>
+                                    <th><a class="info_butt line_butt" href="{% url "main:orders_info" item.id %}">Подробнее</a></th>
+                                    <th><a class="exp_butt line_butt" href="{% url "main:ordexp" item.id %}">Экспорт</a></th>
+                                    <th><a class="red_butt line_butt" href="{% url "main:orders_red" item.id %}">Изменить</a></th>
+                                    <th><a class="del_butt line_butt" href="{% url "main:order_del" item.id %}">Удалить</a></th>
+                                </tr>
+                            {% endif %}
+                            {% empty %}
+                                    <tr class="cicle">
+                                        <th>Нет заявок</th>
+                                    </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+
+                    </div>
+    </div>
+
+    <script> 
+        function toggleChat() {
+            const chat = document.getElementById('json_panel');
+            chat.style.display = chat.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
+{% else %}
+    <p class="els_unck">Вы не вошли в систему.</p>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block title %}
+    <title>Подача заявки</title>
+{% endblock %}
+
+{% block stylefooter %}
+    <link rel="stylesheet" href="{% static "styles/form_inpdata_style.css" %}">
+{% endblock %}
+
+{% block main_content %}
+{% if user.is_authenticated %}
+    <div class="main_content">
+                <form method="post" action="postorder/">
+                        {% csrf_token %}
+                        Фамилия имя клиента:
+                        <input type="text" class="contact_info" name="username" placeholder="Введите фамилию и имя" maxlength="60" />
+
+                        <br />
+
+                        Номер телефона:
+                        <input type="tel" class="contact_info" name="phone_number" placeholder="Введите телефон" maxlength="12" />
+
+                        <br />
+
+                        Почта:
+                        <input type="email" class="contact_info" name="email" placeholder="Введите почту" maxlength="320" />
+                        
+                        <br />
+
+                        Выберите тип проблемы из списка
+                        <a class="type_prob"><input type="radio" id="1" name="type" value="Не работает персональный компьютер" />Не работает персональный компьютер</a>
+                        <a class="type_prob"><input type="radio" id="2" name="type" value="Не работает ноутбук" />Не работает ноутбук</a>
+                        <a class="type_prob"><input type="radio" id="3" name="type" value="Не работает комплектующая деталь" />Не работает комплектующая деталь</a>
+                        <a class="type_prob"><input type="radio" id="4" name="type" value="Чистка персонального компьютера" />Чистка персонального компьютера</a>
+                        <a class="type_prob"><input type="radio" id="5" name="type" value="Чистка ноутбука" />Чистка ноутбука</a>
+                        <a class="type_prob"><input type="radio" id="6" name="type" value="Чистка комплектующей детали" />Чистка комплектующей детали</a>
+                        <a class="type_prob"><input type="radio" id="7" name="type" value="Замена термопасты" />Замена термопасты</a>
+                        <a class="type_prob"><input type="radio" id="8" name="type" value="Другое" />Другое</a>
+
+                        <br />
+
+                        Опишите проблему:
+                        <textarea type="text" class="problem_text" name="problem" placeholder="Опишите проблему (максимум 500 символов)" maxlength="500"></textarea>
+
+                        <br />
+
+                        <input class="inp_button" type="submit" value="Отправить" />
+                    </form>
+                    
+                    <div class="orders_form active_form">
+                        <form id="myTable" method="post" action="postupdate/">
+                        {% csrf_token %}
+                            <table class="list_orders">
+                                <caption>Список активных заявок</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Вып</th>
+                                        <th onclick="sortTable(1)" class="chet_col">ID</th>
+                                        <th onclick="sortTable(2)" >Заказчик</th>
+                                        <th class="chet_col">Телефон</th>
+                                        <th>Почта</th>
+                                        <th class="chet_col">Тип проблемы</th>
+                                        <th>Комментарий к заявке</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                {% for item in full_ord %}
+                                {% if not item.is_complate %}
+                                    <tr class="cicle">
+                                        <th><input type="radio" id="{{ item.id }}" name="is_comp" value="{{ item.id }}" /></th>
+                                        <th>{{ item.id }}</th>
+                                        <th>{{ item.name }}</th>
+                                        <th>{{ item.phone }}</th>
+                                        <th>{{ item.email }}</th>
+                                        <th>{{ item.type_prob }}</th>
+                                        <th>{{ item.comment_prob }}</th>
+                                    </tr>
+                                {% endif %}
+                                {% empty %}
+                                    <tr class="cicle">
+                                        <th>Нет заявок</th>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                            <input class="inp_button" type="submit" value="Указать выполненные" />
+                        </form>
+                    </div>
+    </div>
+
+    <div class="orders_form compl_ord">
+                        <form method="post" action="postupdate/">
+                        {% csrf_token %}
+                            <div class="list_orders">  
+                                <table>
+                                    <caption>Список выполненых заявок</caption>
+                                    <tr>
+                                        <th>Вып</th>
+                                        <th class="chet_col">ID</th>
+                                        <th>Заказчик</th>
+                                        <th class="chet_col">Телефон</th>
+                                        <th>Почта</th>
+                                        <th class="chet_col">Тип проблемы</th>
+                                        <th>Комментарий к заявке</th>
+                                    </tr>
+                                    {% for item in full_ord %}
+                                    {% if item.is_complate %}
+                                        <tr class="cicle">
+                                            <th><input type="checkbox" id="{{ item.id }}" name="is_comp" /></th>
+                                            <th>{{ item.id }}</th>
+                                            <th>{{ item.name }}</th>
+                                            <th>{{ item.phone }}</th>
+                                            <th>{{ item.email }}</th>
+                                            <th>{{ item.type_prob }}</th>
+                                            <th>{{ item.comment_prob }}</th>
+                                        </tr>
+                                    {% endif %}
+                                    {% empty %}
+                                        <tr class="cicle"><th>Нет заявок</th></tr>
+                                    {% endfor %}
+                                </table>
+                            </div>
+                        </form>
+    </div>
+{% else %}
+    <p class="els_unck">Вы не вошли в систему.</p>
+{% endif %}
+{% endblock %}

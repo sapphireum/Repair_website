@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block title %}
+    <title>Добавление мастера</title>
+{% endblock %}
+
+{% block stylefooter %}
+    <link rel="stylesheet" href="{% static "styles/form_inpdata_style.css" %}">
+    <link rel="stylesheet" href="{% static "styles/orders_list.css" %}">
+    <link rel="stylesheet" href="{% static "styles/block_add.css" %}">
+{% endblock %}
+
+{% block main_content %}
+{% if user.is_authenticated %}
+    <div class="main_content">
+                    <div class="panel_categ">
+                        <h3>Вкладки</h3>
+                        <div class="column_panel">
+                            <a class="but_res" href="{% url "main:index" %}"><img name="" src="" /><span>Заявки</span></a>
+                            <a class="but_res" href="{% url "main:clients" %}"><img name="" src="" /><span>Клиенты</span></a>
+                            <a class="but_res selected" href="{% url "main:masters" %}"><img name="" src="" /><span>Мастера</span></a>
+                            <a class="but_res" href="{% url "main:types" %}"><img name="" src="" /><span>Типы</span></a>
+                            <a class="but_res" href="{% url "main:statuses" %}"><img name="" src="" /><span>Статусы</span></a>
+                        </div>
+                    </div>
+                    
+                    <div class="ker_pg orders_form active_form">
+                        <div class="title_pg"><h1>Мастер</h1></div>
+
+                        <div class="panel_work">
+                            <div class="tools_part">
+                                <a class="tool_but left_part_panel" href="{% url "main:masters_add" %}">➕&nbsp;Добавить</a>
+                                <a class="tool_but left_part_panel" href="{% url "main:masters" %}">👁&nbsp;Посмотреть</a>
+                            </div>
+                        </div>
+
+                        <form method="post" action="{% url "main:postaddmaster" %}">
+                        {% csrf_token %}
+                            <div class="block_add">
+                                <div class="inpdata_cont">
+                                    <p class="labelname">Полное имя</p>
+                                    <input type="text" class="line_info" id="name" name="name" required>
+                                </div>
+                                
+                                <div class="inpdata_cont">
+                                    <p class="labelname">Телефон</p>
+                                    <input type="tel" placeholder="Пример: +78003334422" class="line_info" id="phone" name="phone" pattern="+7[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                                </div>
+
+                                <div class="inpdata_cont">
+                                    <p class="labelname">Почта</p>
+                                    <input type="email" class="line_info" id="email" name="email" required>
+                                </div>
+
+                                <div class="inpdata_cont">
+                                    <p class="labelname">Адресс</p>
+                                    <input type="text" class="line_info" id="address" name="address" required>
+                                </div>
+
+                                <input class="inp_button" type="submit" value="Отправить" />
+                            </div>
+                        </form>
+                    </div>
+    </div>
+{% else %}
+    <p class="els_unck">Вы не вошли в систему.</p>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,45 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width', 'initial-scale=1.0'>
+        {% block title %}{% endblock %}
+        <link rel="icon" href="{% static "images/desktop.ico" %}" type="image/x-icon">
+        <link rel="stylesheet" href="{% static "styles/panel_style.css" %}">
+        <link rel="stylesheet" href="{% static "styles/content_style.css" %}">
+        <link rel="stylesheet" href="{% static "styles/footer_style.css" %}">
+        {% block stylefooter %}{% endblock %}
+    </head>
+    <body>
+        <div class="main_header" style="background-color: black; color: white;">
+            {% comment %} Формирование заявки на ремонт в Компьютерную мастерскую {% endcomment %}
+            <span><a class="mainpage" href="{% url "welcome:welcome" %}">МК-Н</a></span>
+            <div class="but_nav">
+                {% if user.is_authenticated %}        
+                {% comment %} {% static profile_img %} {% endcomment %}
+                    {% comment %} <img class="acc avatar" src="users_image/olo.jpg" alt="<Аватар пользователя>" style="max-width: 50px; max-height: 50px; border-radius: 50%;"/> {% endcomment %}
+                    <a class="acc" href="{% url "user:profile" %}">Аккаунт</a>
+                    <a class="acc" href="{% url "main:index" %}">Заявки</a>
+                    <a class="acc" href="{% url "user:logout" %}">Выйти</a>
+                {% else %}
+                    <a class="acc" href="{% url "user:login" %}">Войти</a>
+                {% endif %}
+                
+            </div>
+        </div>
+        <div class="main_cont_page">
+            {% block main_content %}{% endblock %}
+        </div>
+
+        <footer>
+            <div class="backgr_footer">
+                <p><a class="footer_text" href="https://t.me/ynTrappa" target="_blank"></a></p>
+                <p style="display: block;"><a class="footer_text" href="{% url "main:zero" %}" target="_blank">2026 ©</a></p>
+            </div>
+        </footer>
+    </body>
+</html> 
+
+

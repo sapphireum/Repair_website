@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block title %}
+    <title>Добавление заявки</title>
+{% endblock %}
+
+{% block stylefooter %}
+    <link rel="stylesheet" href="{% static "styles/form_inpdata_style.css" %}">
+    <link rel="stylesheet" href="{% static "styles/orders_list.css" %}">
+    <link rel="stylesheet" href="{% static "styles/orders_add.css" %}">
+{% endblock %}
+
+{% block main_content %}
+{% if user.is_authenticated %}
+    <div class="main_content">
+                    <div class="panel_categ">
+                        <h3>Вкладки</h3>
+                        <div class="column_panel">
+                            <a class="but_res selected" href="{% url "main:index" %}"><img name="" src="" /><span>Заявки</span></a>
+                            <a class="but_res" href="{% url "main:clients" %}"><img name="" src="" /><span>Клиенты</span></a>
+                            <a class="but_res" href="{% url "main:masters" %}"><img name="" src="" /><span>Мастера</span></a>
+                            <a class="but_res" href="{% url "main:types" %}"><img name="" src="" /><span>Типы</span></a>
+                            <a class="but_res" href="{% url "main:statuses" %}"><img name="" src="" /><span>Статусы</span></a>
+                        </div>
+                    </div>
+                    
+                    <div class="ker_pg orders_form active_form">
+                        <div class="title_pg"><h1>Заявка</h1></div>
+                        <div class="panel_work pan_add">
+                            <div class="tools_part">
+                                    <a class="tool_but left_part_panel" href="{% url "main:orders_add" %}">➕&nbsp;Добавить</a>
+                                    <a class="tool_but left_part_panel" href="{% url "main:orders" %}">👁&nbsp;Посмотреть</a>
+                            </div>
+                        </div>
+
+                        <form method="post" action="{% url "main:postaddorder" %}">
+                        {% csrf_token %}
+                            <div class="block_add">
+                                <div>
+                                    Описание проблемы
+                                    <textarea type="text" class="problem_text" name="problem" placeholder="Опишите проблему (максимум 500 символов)" maxlength="500"></textarea>
+                                </div>
+                                
+                                <div class="chet_col data_block">
+                                    Тип проблемы
+                                    <br />
+                                    <select name="type" id="type-select">
+                                        {% for obj in typeissue %}
+                                        <option value="{{ obj.id }}">{{ obj.name }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+
+                                <div class="data_block">
+                                    Клиент
+                                    <br />
+                                    <select name="client" id="client-select">
+                                        {% for obj in clients %}
+                                        <option value="{{ obj.id }}">{{ obj.name }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+
+                                <div class="chet_col data_block">
+                                    Мастер
+                                    <br />
+                                    <select name="master" id="master-select">
+                                        {% for obj in masters %}
+                                        <option value="{{ obj.id }}">{{ obj.name }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+
+                                <div class="data_block">
+                                    Статус
+                                    <br />
+                                    <select name="status" id="status-select">
+                                        {% for obj in statuses %}
+                                        <option value="{{ obj.id }}">{{ obj.name }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+
+                                <div class="data_block">
+                                    Код связанной техники
+                                    <br />
+                                    <input type="text" name="tech" id="tech">
+                                </div>
+
+                                <div class="data_block">
+                                    Цена
+                                    <br />
+                                    <input type="number" name="price" id="price" step="any" min="0" max="100000" placeholder="0.0">
+                                </div>
+
+                                <input class="inp_button" type="submit" value="Отправить" />
+                            </div>
+                        </form>
+                    </div>
+    </div>
+{% else %}
+    <p class="els_unck">Вы не вошли в систему.</p>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    <title>Авторизация</title>
+{% endblock %}
+
+{% block main_content %} 
+    <form class="form_login" action="{% url "user:login" %}" method="post">
+        {% csrf_token %}
+        {{form}}
+        <button type="submit" class="btn-login">Войти</button>
+    </form>
+{% endblock %}
+

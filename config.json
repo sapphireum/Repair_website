@@ -1,0 +1,9 @@
+[
+    {
+        "host": "localhost",
+        "database": "pc_master",
+        "user": "postgres",
+        "password": "password",
+        "port": "5432"
+    }
+]

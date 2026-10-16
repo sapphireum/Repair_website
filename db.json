@@ -1,0 +1,1370 @@
+[
+    {
+        "model": "admin.logentry",
+        "pk": 1,
+        "fields": {
+            "action_time": "2026-05-23T17:22:42.879Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "1",
+            "object_repr": "Чистка оборудования",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 2,
+        "fields": {
+            "action_time": "2026-05-23T17:22:53.635Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "1",
+            "object_repr": "В работе",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 3,
+        "fields": {
+            "action_time": "2026-05-23T17:23:53.975Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "1",
+            "object_repr": "Афонин Сергей Викторович",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 4,
+        "fields": {
+            "action_time": "2026-05-23T17:24:28.985Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "1",
+            "object_repr": "Пузанин Григорий Дмитриевич",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 5,
+        "fields": {
+            "action_time": "2026-05-23T17:29:43.549Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "1",
+            "object_repr": "Заявка Клиент-Пузанин Григорий Дмитриевич Мастер-Афонин Сергей Викторович",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 6,
+        "fields": {
+            "action_time": "2026-05-24T16:53:11.129Z",
+            "user": 1,
+            "content_type": 5,
+            "object_id": "1",
+            "object_repr": "root",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0432\\u0430\\u0442\\u0430\\u0440\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 7,
+        "fields": {
+            "action_time": "2026-05-24T17:15:22.185Z",
+            "user": 1,
+            "content_type": 5,
+            "object_id": "1",
+            "object_repr": "root",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0432\\u0430\\u0442\\u0430\\u0440\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 8,
+        "fields": {
+            "action_time": "2026-05-24T18:14:23.391Z",
+            "user": 1,
+            "content_type": 5,
+            "object_id": "2",
+            "object_repr": "nono",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 9,
+        "fields": {
+            "action_time": "2026-05-24T18:21:30.923Z",
+            "user": 1,
+            "content_type": 5,
+            "object_id": "2",
+            "object_repr": "nono",
+            "action_flag": 2,
+            "change_message": "[]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 10,
+        "fields": {
+            "action_time": "2026-05-24T18:24:01.254Z",
+            "user": 1,
+            "content_type": 5,
+            "object_id": "3",
+            "object_repr": "bubu",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 11,
+        "fields": {
+            "action_time": "2026-05-24T18:27:14.071Z",
+            "user": 1,
+            "content_type": 5,
+            "object_id": "3",
+            "object_repr": "bubu",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 12,
+        "fields": {
+            "action_time": "2026-05-24T18:27:14.071Z",
+            "user": 1,
+            "content_type": 5,
+            "object_id": "2",
+            "object_repr": "nono",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 13,
+        "fields": {
+            "action_time": "2026-05-24T18:28:49.582Z",
+            "user": 1,
+            "content_type": 5,
+            "object_id": "4",
+            "object_repr": "New_user",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 14,
+        "fields": {
+            "action_time": "2026-05-25T04:34:32.027Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "1",
+            "object_repr": "[1] Заявка:  Клиент-Пузанин Григорий Дмитриевич",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 15,
+        "fields": {
+            "action_time": "2026-05-25T04:35:54.391Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "2",
+            "object_repr": "[2] Заявка:  Клиент-Пузанин Григорий Дмитриевич",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 16,
+        "fields": {
+            "action_time": "2026-05-25T06:19:23.236Z",
+            "user": 4,
+            "content_type": 5,
+            "object_id": "4",
+            "object_repr": "New_user",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Superuser status\", \"Staff status\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 17,
+        "fields": {
+            "action_time": "2026-05-26T05:22:44.248Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "2",
+            "object_repr": "Полкин Иван Петрович",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 18,
+        "fields": {
+            "action_time": "2026-05-26T05:23:09.547Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "3",
+            "object_repr": "Первын Михаил Сергеевич",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 19,
+        "fields": {
+            "action_time": "2026-05-26T05:23:40.649Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "4",
+            "object_repr": "Вешена Ольга Павловна",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 20,
+        "fields": {
+            "action_time": "2026-05-26T05:24:07.096Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "5",
+            "object_repr": "Бареухин Данил Евгеньевич",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 21,
+        "fields": {
+            "action_time": "2026-05-26T05:24:36.165Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "6",
+            "object_repr": "Деймс Абжула Хатимович",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 22,
+        "fields": {
+            "action_time": "2026-05-26T05:25:09.623Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "7",
+            "object_repr": "Выдрина Полина Андреевна",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 23,
+        "fields": {
+            "action_time": "2026-05-26T05:25:43.374Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "8",
+            "object_repr": "NEko On MYroom",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 24,
+        "fields": {
+            "action_time": "2026-05-26T05:26:29.287Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "9",
+            "object_repr": "Менин Сергей Святославович",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 25,
+        "fields": {
+            "action_time": "2026-05-26T05:27:13.782Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "10",
+            "object_repr": "Заукин Абу Бандитович",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 26,
+        "fields": {
+            "action_time": "2026-05-26T05:27:57.154Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "2",
+            "object_repr": "Банин Виктор Петрович",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 27,
+        "fields": {
+            "action_time": "2026-05-26T05:28:46.881Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "3",
+            "object_repr": "Кирсанова Кристина Агилеровна",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 28,
+        "fields": {
+            "action_time": "2026-05-26T05:29:34.798Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "4",
+            "object_repr": "Мегин Святослав Алексеевич",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 29,
+        "fields": {
+            "action_time": "2026-05-26T05:29:49.886Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "2",
+            "object_repr": "Завершен",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 30,
+        "fields": {
+            "action_time": "2026-05-26T05:29:55.127Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "3",
+            "object_repr": "Отменен",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 31,
+        "fields": {
+            "action_time": "2026-05-26T06:28:29.896Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "2",
+            "object_repr": "Замена комплектующих",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 32,
+        "fields": {
+            "action_time": "2026-05-26T06:28:45.746Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "3",
+            "object_repr": "Сборка ПК",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 33,
+        "fields": {
+            "action_time": "2026-05-26T06:29:05.272Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "4",
+            "object_repr": "Обслуживание программного обеспечения",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 34,
+        "fields": {
+            "action_time": "2026-05-26T06:29:12.438Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "5",
+            "object_repr": "Настройка оборудования",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 35,
+        "fields": {
+            "action_time": "2026-05-26T06:29:27.731Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "6",
+            "object_repr": "Рекомендательные услуги",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 36,
+        "fields": {
+            "action_time": "2026-05-26T06:29:53.137Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "7",
+            "object_repr": "Диагностические тесты",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 37,
+        "fields": {
+            "action_time": "2026-05-26T06:30:34.829Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "8",
+            "object_repr": "Пайка устройства",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 38,
+        "fields": {
+            "action_time": "2026-05-26T06:30:51.439Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "9",
+            "object_repr": "Замена термокомплектующих",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 39,
+        "fields": {
+            "action_time": "2026-05-26T06:31:07.764Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "10",
+            "object_repr": "Прочее",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 40,
+        "fields": {
+            "action_time": "2026-05-26T06:31:58.420Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "3",
+            "object_repr": "[3] Заявка:  Клиент-Бареухин Данил Евгеньевич",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 41,
+        "fields": {
+            "action_time": "2026-05-26T06:32:35.539Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "4",
+            "object_repr": "[4] Заявка:  Клиент-Полкин Иван Петрович",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 42,
+        "fields": {
+            "action_time": "2026-05-26T06:33:03.087Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "5",
+            "object_repr": "[5] Заявка:  Клиент-Пузанин Григорий Дмитриевич",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 43,
+        "fields": {
+            "action_time": "2026-05-26T06:33:34.348Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "6",
+            "object_repr": "[6] Заявка:  Клиент-Выдрина Полина Андреевна",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 44,
+        "fields": {
+            "action_time": "2026-05-26T06:34:24.003Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "7",
+            "object_repr": "[7] Заявка:  Клиент-NEko On MYroom",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 45,
+        "fields": {
+            "action_time": "2026-05-26T06:35:02.412Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "8",
+            "object_repr": "[8] Заявка:  Клиент-Полкин Иван Петрович",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 46,
+        "fields": {
+            "action_time": "2026-05-26T06:35:40.800Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "9",
+            "object_repr": "[9] Заявка:  Клиент-Заукин Абу Бандитович",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 47,
+        "fields": {
+            "action_time": "2026-05-26T06:36:28.114Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "10",
+            "object_repr": "[10] Заявка:  Клиент-Вешена Ольга Павловна",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 48,
+        "fields": {
+            "action_time": "2026-05-26T06:37:09.890Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "11",
+            "object_repr": "[11] Заявка:  Клиент-Деймс Абжула Хатимович",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 49,
+        "fields": {
+            "action_time": "2026-05-26T06:37:54.419Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "12",
+            "object_repr": "[12] Заявка:  Клиент-Менин Сергей Святославович",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 50,
+        "fields": {
+            "action_time": "2026-06-04T15:46:10.038Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "12",
+            "object_repr": "Неизвестен",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 51,
+        "fields": {
+            "action_time": "2026-06-04T15:46:10.038Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "11",
+            "object_repr": "Неизвестен",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 52,
+        "fields": {
+            "action_time": "2026-06-04T15:47:24.844Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "13",
+            "object_repr": "Неизвестен",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 53,
+        "fields": {
+            "action_time": "2026-06-04T15:55:30.624Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "14",
+            "object_repr": "Неизвестен",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "ctet1pq5m8uz6oyix4kqw6oetvml9gmk",
+        "fields": {
+            "session_data": ".eJxVjDsOwyAQRO9CHSHw8gkp0-cMCJZVcBKBZOwqyt0Dkgu7Gmnem_kyH7Y1-63R4ufEbkyyy7GLAd9UBkivUJ6VYy3rMkc-FL7Txh810ee-u6eDHFruazLgQINFRdIqAhkJlRJCORLaJJiuzqBEsEZH3SXTeRhpBUwuCfb7A8MYN0E:1wRCYe:ghf02r4dNuMJLyfoTTbfAqzaQxxIvMLg1SnBsJNl0Kg",
+            "expire_date": "2026-06-07T17:24:12.820Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "gvzczzm3d1shcpr1a6810o7z4d69hvd3",
+        "fields": {
+            "session_data": ".eJxVjDsOwyAQRO9CHSHw8gkp0-cMCJZVcBKBZOwqyt0Dkgu7Gmnem_kyH7Y1-63R4ufEbkyyy7GLAd9UBkivUJ6VYy3rMkc-FL7Txh810ee-u6eDHFruazLgQINFRdIqAhkJlRJCORLaJJiuzqBEsEZH3SXTeRhpBUwuCfb7A8MYN0E:1wRCYd:lPXneMxP3nkDsblI5hKuaJYxqJU1lqs_Au8--D4qe3c",
+            "expire_date": "2026-06-07T17:24:11.406Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "o0e1wtife3hjo6ao9wjwndit0y1c66qy",
+        "fields": {
+            "session_data": ".eJxVjDsOwyAQRO9CHSHw8gkp0-cMCJZVcBKBZOwqyt0Dkgu7Gmnem_kyH7Y1-63R4ufEbkyyy7GLAd9UBkivUJ6VYy3rMkc-FL7Txh810ee-u6eDHFruazLgQINFRdIqAhkJlRJCORLaJJiuzqBEsEZH3SXTeRhpBUwuCfb7A8MYN0E:1wYj7Y:qdFNdEBO4hrzHQTsJgctMi0dsHtUmpton1kl-JyD0B4",
+            "expire_date": "2026-06-28T11:35:20.256Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "yqk7jdztpmgp0rd7r7w5m6a602jabnzy",
+        "fields": {
+            "session_data": ".eJxVjDsOwyAQRO9CHSHw8gkp0-cMCJZVcBKBZOwqyt0Dkgu7Gmnem_kyH7Y1-63R4ufEbkyyy7GLAd9UBkivUJ6VYy3rMkc-FL7Txh810ee-u6eDHFruazLgQINFRdIqAhkJlRJCORLaJJiuzqBEsEZH3SXTeRhpBUwuCfb7A8MYN0E:1wQq7t:XLJrgs6dJ4wkSncye9axOFFUAzyL-kMc3mdXYe2yAMQ",
+            "expire_date": "2026-06-06T17:27:05.942Z"
+        }
+    },
+    {
+        "model": "main.clients",
+        "pk": 1,
+        "fields": {
+            "name": "Пузанин Григорий Дмитриевич",
+            "phone": "+78005553434",
+            "email": "123@123.com",
+            "created_date": "2026-06-15",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.clients",
+        "pk": 2,
+        "fields": {
+            "name": "Полкин Иван Петрович",
+            "phone": "+234209877",
+            "email": "att@reno.com",
+            "created_date": "2026-06-15",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.clients",
+        "pk": 3,
+        "fields": {
+            "name": "Первын Михаил Сергеевич",
+            "phone": "+32553434",
+            "email": "base@go.com",
+            "created_date": "2026-06-15",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.clients",
+        "pk": 4,
+        "fields": {
+            "name": "Вешена Ольга Павловна",
+            "phone": "+328349",
+            "email": "33123@33123.com",
+            "created_date": "2026-06-15",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.clients",
+        "pk": 5,
+        "fields": {
+            "name": "Бареухин Данил Евгеньевич",
+            "phone": "+320978834",
+            "email": "memo2born@gmail.com",
+            "created_date": "2026-06-15",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.clients",
+        "pk": 6,
+        "fields": {
+            "name": "Деймс Абжула Хатимович",
+            "phone": "+374028397",
+            "email": "ero@re.com",
+            "created_date": "2026-06-15",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.clients",
+        "pk": 7,
+        "fields": {
+            "name": "Выдрина Полина Андреевна",
+            "phone": "+9879834343",
+            "email": "boo@gm.com",
+            "created_date": "2026-06-15",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.clients",
+        "pk": 8,
+        "fields": {
+            "name": "NEko On MYroom",
+            "phone": "+8888888999",
+            "email": "doggy@bigD.com",
+            "created_date": "2026-06-15",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.clients",
+        "pk": 9,
+        "fields": {
+            "name": "Менин Сергей Святославович",
+            "phone": "+88573493443",
+            "email": "feni2boot@mail.com",
+            "created_date": "2026-06-15",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.clients",
+        "pk": 10,
+        "fields": {
+            "name": "Заукин Абу Бандитович",
+            "phone": "+36423709432",
+            "email": "gangSoTrue@gangLA.la",
+            "created_date": "2026-06-15",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.clients",
+        "pk": 15,
+        "fields": {
+            "name": "Аккин Андрей Павлович",
+            "phone": "+79617297878",
+            "email": "eno123@eno123.com",
+            "created_date": "2026-06-15",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.clients",
+        "pk": 16,
+        "fields": {
+            "name": "Боженов Николай Аврорович",
+            "phone": "+78220001488",
+            "email": "bangKO@gmail.com",
+            "created_date": "2026-06-15",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.clients",
+        "pk": 17,
+        "fields": {
+            "name": "Ферзь Иоан Волкович",
+            "phone": "+79567890022",
+            "email": "ankidron_p2p@gmail.com",
+            "created_date": "2026-06-15",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.masters",
+        "pk": 1,
+        "fields": {
+            "name": "Афонин Сергей Викторович",
+            "phone": "+79617297878",
+            "email": "bang@gmail.com",
+            "address": "ул. Ишимская 22, 22",
+            "created_date": "2026-06-15",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.masters",
+        "pk": 2,
+        "fields": {
+            "name": "Банин Виктор Петрович",
+            "phone": "+89878943783",
+            "email": "bvpetrovich@gmai.com",
+            "address": "Севастопальская 21, 21",
+            "created_date": "2026-06-15",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.masters",
+        "pk": 3,
+        "fields": {
+            "name": "Кирсанова Кристина Агилеровна",
+            "phone": "+98578633435",
+            "email": "teo888@gmail.com",
+            "address": "Парижанского 302, 122",
+            "created_date": "2026-06-15",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.masters",
+        "pk": 4,
+        "fields": {
+            "name": "Мегин Святослав Алексеевич",
+            "phone": "+63478534435",
+            "email": "gmDamn@yndx.ru",
+            "address": "Кутузова 44, 7",
+            "created_date": "2026-06-15",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.masters",
+        "pk": 5,
+        "fields": {
+            "name": "Боженов Николай Аврорович",
+            "phone": "+78220001488",
+            "email": "bangKO@gmail.com",
+            "address": "ул. Леонова 22, 22",
+            "created_date": "2026-06-15",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.masters",
+        "pk": 6,
+        "fields": {
+            "name": "Инон Аркадий Григорьевич",
+            "phone": "+79618000202",
+            "email": "bacugan89@gg.com",
+            "address": "ул. Патриотов 14, 88",
+            "created_date": "2026-06-15",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.masters",
+        "pk": 7,
+        "fields": {
+            "name": "Пулос Андрей Веникович",
+            "phone": "+78886661313",
+            "email": "aionig13@gm.boy",
+            "address": "ул. Севастопольская 13, 64",
+            "created_date": "2026-06-15",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.typeissues",
+        "pk": 1,
+        "fields": {
+            "name": "Чистка оборудования",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.typeissues",
+        "pk": 2,
+        "fields": {
+            "name": "Замена комплектующих",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.typeissues",
+        "pk": 3,
+        "fields": {
+            "name": "Сборка ПК",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.typeissues",
+        "pk": 4,
+        "fields": {
+            "name": "Обслуживание программного обеспечения",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.typeissues",
+        "pk": 5,
+        "fields": {
+            "name": "Настройка оборудования",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.typeissues",
+        "pk": 6,
+        "fields": {
+            "name": "Рекомендательные услуги",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.typeissues",
+        "pk": 7,
+        "fields": {
+            "name": "Диагностические тесты",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.typeissues",
+        "pk": 8,
+        "fields": {
+            "name": "Пайка устройства",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.typeissues",
+        "pk": 9,
+        "fields": {
+            "name": "Замена термокомплектующих",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.typeissues",
+        "pk": 10,
+        "fields": {
+            "name": "Прочее",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.statusorders",
+        "pk": 1,
+        "fields": {
+            "name": "В работе",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.statusorders",
+        "pk": 2,
+        "fields": {
+            "name": "Завершен",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.statusorders",
+        "pk": 3,
+        "fields": {
+            "name": "Отменен",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.orders",
+        "pk": 2,
+        "fields": {
+            "comment_prob": "                                                                                                                                                                Много пыли\r\n                                    \r\n                                    \r\n                                    \r\n                                    ",
+            "client": 1,
+            "master": 1,
+            "type_issue": 1,
+            "status_order": 1,
+            "price": "1000.00",
+            "idTech": "123",
+            "created_date": "2026-06-15",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.orders",
+        "pk": 3,
+        "fields": {
+            "comment_prob": "Настройка антивирусного ПО и соответствующая проверка",
+            "client": 5,
+            "master": 4,
+            "type_issue": 4,
+            "status_order": 1,
+            "price": "2400.00",
+            "idTech": "",
+            "created_date": "2026-06-15",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.orders",
+        "pk": 4,
+        "fields": {
+            "comment_prob": "Замена прокалдок и термопасты на видеокарте",
+            "client": 2,
+            "master": 2,
+            "type_issue": 9,
+            "status_order": 1,
+            "price": "1000.00",
+            "idTech": "",
+            "created_date": "2026-06-15",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.orders",
+        "pk": 5,
+        "fields": {
+            "comment_prob": "Замена матрицы монитора",
+            "client": 1,
+            "master": 1,
+            "type_issue": 10,
+            "status_order": 2,
+            "price": "4500.00",
+            "idTech": "",
+            "created_date": "2026-06-15",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.orders",
+        "pk": 6,
+        "fields": {
+            "comment_prob": "Перепайка шлейфов платы",
+            "client": 7,
+            "master": 4,
+            "type_issue": 8,
+            "status_order": 1,
+            "price": "3800.00",
+            "idTech": "",
+            "created_date": "2026-06-15",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.orders",
+        "pk": 7,
+        "fields": {
+            "comment_prob": "Проверка корректных настроек ОС и программ",
+            "client": 8,
+            "master": 3,
+            "type_issue": 7,
+            "status_order": 2,
+            "price": "2000.00",
+            "idTech": "",
+            "created_date": "2026-06-15",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.orders",
+        "pk": 8,
+        "fields": {
+            "comment_prob": "Диагностика платы",
+            "client": 2,
+            "master": 1,
+            "type_issue": 7,
+            "status_order": 3,
+            "price": "1000.00",
+            "idTech": "",
+            "created_date": "2026-06-15",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.orders",
+        "pk": 9,
+        "fields": {
+            "comment_prob": "Подробная лекция об устройствах маршрутизации",
+            "client": 10,
+            "master": 3,
+            "type_issue": 6,
+            "status_order": 2,
+            "price": "0.00",
+            "idTech": "",
+            "created_date": "2026-06-15",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.orders",
+        "pk": 10,
+        "fields": {
+            "comment_prob": "Сборка ПК их клиентских комплектующих",
+            "client": 4,
+            "master": 1,
+            "type_issue": 3,
+            "status_order": 1,
+            "price": "7000.00",
+            "idTech": "",
+            "created_date": "2026-06-15",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.orders",
+        "pk": 11,
+        "fields": {
+            "comment_prob": "Плановая чистка блока ПК",
+            "client": 6,
+            "master": 1,
+            "type_issue": 1,
+            "status_order": 2,
+            "price": "1900.00",
+            "idTech": "",
+            "created_date": "2026-06-15",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.orders",
+        "pk": 12,
+        "fields": {
+            "comment_prob": "Смена процессора и блока питания на новые клиентские",
+            "client": 9,
+            "master": 4,
+            "type_issue": 2,
+            "status_order": 2,
+            "price": "3000.00",
+            "idTech": "",
+            "created_date": "2026-06-15",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.orders",
+        "pk": 13,
+        "fields": {
+            "comment_prob": "Чистка офисного персонального компьютера",
+            "client": 15,
+            "master": 5,
+            "type_issue": 1,
+            "status_order": 1,
+            "price": "2200.00",
+            "idTech": "",
+            "created_date": "2026-06-15",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.orders",
+        "pk": 14,
+        "fields": {
+            "comment_prob": "                                        Настройка антивирусного ПО и соответствующая проверка\r\n                                    ",
+            "client": 5,
+            "master": 2,
+            "type_issue": 4,
+            "status_order": 1,
+            "price": "2400.00",
+            "idTech": "",
+            "created_date": "2026-06-15",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.orders",
+        "pk": 15,
+        "fields": {
+            "comment_prob": "                                        Много пыли\r\n                                    ",
+            "client": 1,
+            "master": 2,
+            "type_issue": 1,
+            "status_order": 1,
+            "price": "1000.00",
+            "idTech": "",
+            "created_date": "2026-06-15",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.orders",
+        "pk": 16,
+        "fields": {
+            "comment_prob": "                                                                                Настройка антивирусного ПО и соответствующая проверка\r\n                                    \r\n                                    ",
+            "client": 5,
+            "master": 4,
+            "type_issue": 4,
+            "status_order": 1,
+            "price": "2400.00",
+            "idTech": "",
+            "created_date": "2026-06-15",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.orders",
+        "pk": 17,
+        "fields": {
+            "comment_prob": "Сборка компьютера с видеокартой gtx 1070 ti и процессором i5-12400k",
+            "client": 10,
+            "master": 3,
+            "type_issue": 3,
+            "status_order": 2,
+            "price": "10000.00",
+            "idTech": "",
+            "created_date": "2026-06-15",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "main.orders",
+        "pk": 18,
+        "fields": {
+            "comment_prob": "Чистка корпуса и комплектующих",
+            "client": 10,
+            "master": 6,
+            "type_issue": 1,
+            "status_order": 1,
+            "price": "1200.00",
+            "idTech": "877-ABC3",
+            "created_date": "2026-06-15",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "users.typeprofiles",
+        "pk": 1,
+        "fields": {
+            "name": "Администратор"
+        }
+    },
+    {
+        "model": "users.typeprofiles",
+        "pk": 2,
+        "fields": {
+            "name": "Менеджер"
+        }
+    },
+    {
+        "model": "users.typeprofiles",
+        "pk": 3,
+        "fields": {
+            "name": "Мастер"
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$1000000$kwrjgMOtjYFMBAb6v4jPSp$oK2eSjTChKIQ+siMOM9Kr4+Ily9aS/z5K9WzxZTP1fI=",
+            "last_login": "2026-06-14T11:35:20.241Z",
+            "is_superuser": true,
+            "username": "root",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2026-05-23T15:19:36Z",
+            "profile_img": "users_images/thrill_cat.jpg",
+            "profile_type": 2,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 4,
+        "fields": {
+            "password": "pbkdf2_sha256$1000000$kwrjgMOtjYFMBAb6v4jPSp$oK2eSjTChKIQ+siMOM9Kr4+Ily9aS/z5K9WzxZTP1fI=",
+            "last_login": "2026-05-25T06:17:23Z",
+            "is_superuser": false,
+            "username": "New_user",
+            "first_name": "Artem",
+            "last_name": "Artem",
+            "email": "artem@artem.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2026-05-24T18:27:25Z",
+            "profile_img": "users_images/unnamed.jpg",
+            "profile_type": 2,
+            "groups": [],
+            "user_permissions": []
+        }
+    }
+]

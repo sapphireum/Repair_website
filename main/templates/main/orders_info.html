@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block title %}
+    <title>Заявки</title>
+{% endblock %}
+
+{% block stylefooter %}
+    <link rel="stylesheet" href="{% static "styles/form_inpdata_style.css" %}">
+    <link rel="stylesheet" href="{% static "styles/orders_list.css" %}">
+    <link rel="stylesheet" href="{% static "styles/orders_add.css" %}">
+{% endblock %}
+
+{% block main_content %}
+{% if user.is_authenticated %}
+    <div class="main_content">
+                    <div class="panel_categ">
+                        <h3>Вкладки</h3>
+                        <div class="column_panel">
+                            <a class="but_res selected" href="{% url "main:index" %}"><img name="" src="" /><span>Заявки</span></a>
+                            <a class="but_res" href="{% url "main:clients" %}"><img name="" src="" /><span>Клиенты</span></a>
+                            <a class="but_res" href="{% url "main:masters" %}"><img name="" src="" /><span>Мастера</span></a>
+                            <a class="but_res" href="{% url "main:types" %}"><img name="" src="" /><span>Типы</span></a>
+                            <a class="but_res" href="{% url "main:statuses" %}"><img name="" src="" /><span>Статусы</span></a>
+                        </div>
+                    </div>
+                    
+                    <div class="ker_pg orders_form active_form">
+                        <div class="title_pg"><h1>Заявка №{{ full_ord.extid }}</h1></div>
+                        <div class="panel_work pan_add">
+                            <div class="tools_part">
+                                    <a class="tool_but left_part_panel" href="{% url "main:orders_add" %}">➕&nbsp;Добавить</a>
+                                    <a class="tool_but left_part_panel" href="{% url "main:orders" %}">👁&nbsp;Посмотреть</a>
+                                    <a class="tool_but left_part_panel" href="{% url "main:orders_red" full_ord.id %}">✏&nbsp;Изменить</a>
+                                    <a class="tool_but left_part_panel" href="{% url "main:orders_docs" full_ord.id %}">📃&nbsp;Отчет</a>
+                            </div>
+                        </div>
+
+                        <div class="block_info">
+                            <div class="block_add">
+                                <div class="data_block data_block_info">
+                                    <h2>Дата создания</h2>
+                                    <div class="chet_col">
+                                        {{ full_ord.created_date }}
+                                    </div>
+                                </div>
+
+                                <div class="data_block data_block_info">
+                                    <h2>Описание проблемы</h2>
+                                    <div class="chet_col">
+                                        {{ full_ord.comment_prob }}
+                                    </div>
+                                </div>
+                                
+                                <div class="data_block data_block_info">
+                                    <h2>Тип проблемы</h2>
+                                    <div class="chet_col">
+                                        {{ full_ord.type_issue }}
+                                    </div>
+                                </div>
+
+                                <div class="data_block data_block_info">
+                                    <h2>Клиент</h2>
+                                    <div class="chet_col">
+                                        {{ full_ord.client.name }}
+                                    </div>
+                                </div>
+
+                                <div class="data_block data_block_info">
+                                    <h2>Мастер</h2>
+                                    <div class="chet_col">
+                                        {{ full_ord.master.name }}
+                                    </div>
+                                </div>
+
+                                <div class="data_block data_block_info">
+                                    <h2>Статус</h2>
+                                    <div class="chet_col">
+                                        {{ full_ord.status_order }}
+                                    </div>
+                                </div>
+
+                                <div class="data_block data_block_info">
+                                    <h2>Код техники</h2>
+                                    {% if full_ord.idTech %}
+                                    <div class="chet_col">
+                                        {{ full_ord.idTech }}
+                                    </div>
+                                    {% else %}
+                                    <div class="chet_col">
+                                        Не указан
+                                    </div>
+                                    {% endif %}
+                                </div>
+
+                                <div class="data_block data_block_info">
+                                    <h2>Цена</h2>
+                                    <div class="chet_col">
+                                        {{ full_ord.price }} ₽
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    </div>
+{% else %}
+    <p class="els_unck">Вы не вошли в систему.</p>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    <title>Профиль</title>
+{% endblock %}
+
+{% block stylefooter %}
+    <link rel="stylesheet" href="{% static "styles/profile_style.css" %}">
+{% endblock %}
+
+{% block main_content %} 
+<div class="profile_box">
+    <div class="main_profile_info">
+        <div class="main_line">
+            <div class="image_profile">
+                {% if img %}
+                    <img class="avatar" src="{{ img.url }}" alt="<Аватар пользователя>"/>
+                {% else %}
+                    <img class="avatar" src="{% static 'users_images/ill_3.jpg' %}" alt="Аватар по умолчанию">
+                {% endif %}
+            </div>
+    
+            <div class="pdf_stat_cont">
+                <a class="but_stat" href="{% url "main:statistic" %}"><span>PDF статистика</span></a>
+            </div>
+        </div>
+
+        <div class="name_profile">
+            <label for="user_name" class="textprofile">Имя: <span class="profile_value">{{ username }}</span></label>
+        </div>
+
+        <div class="mail_profile">
+            <label for="user_mail" class="textprofile">Почта: 
+                {% if email %}
+                <span class="profile_value">
+                    {{ email }}
+                </span>
+                {% else %}
+                <span class="profile_value">
+                    Не указано
+                </span>
+                {% endif %}
+            </label>
+        </div>
+
+        <div class="first_profile">
+            <label for="first_profile" class="textprofile">Имя: 
+                {% if first_name %}
+                <span class="profile_value">
+                    {{ first_name }}
+                </span>
+                {% else %}
+                <span class="profile_value">
+                    Не указано
+                </span>
+                {% endif %}
+            </label>
+        </div>
+
+        <div class="last_profile">
+            <label for="last_profile" class="textprofile">Фамилия: 
+                {% if last_name %}
+                <span class="profile_value">
+                    {{ last_name }}
+                </span>
+                {% else %}
+                <span class="profile_value">
+                    Не указано
+                </span>
+                {% endif %}
+            </label>
+        </div>
+
+        <div class="join_profile">
+            <label for="join_profile" class="textprofile">Дата создания учетной записи: 
+                {% if date_joined %}
+                <span class="profile_value">
+                    {{ date_joined }}
+                </span>
+                {% else %}
+                <span class="profile_value">
+                    Не указано
+                </span>
+                {% endif %}
+            </label>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
