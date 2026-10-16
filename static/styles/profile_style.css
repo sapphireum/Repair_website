@@ -1,0 +1,46 @@
+.main_line {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.profile_box {
+    background-color: black;
+    border: 0px solid black;
+    border-radius: 15px;
+    margin: 2% 10% 2% 10%;
+    padding: 20px;
+}
+
+
+.avatar {
+    max-width: 250px;
+    border-radius: 50%;
+}
+
+.profile_value {
+    color: white;
+}
+
+/* Pdf */
+.pdf_stat_cont {
+    margin: 20px;
+}
+
+
+.but_stat {
+    text-decoration: none;
+    background-color: rgb(50, 50, 50);
+    color: aliceblue;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.but_stat:hover {
+    background-color: rgb(255, 0, 132);
+    color: aqua;
+}
+
+
+/* Info */
